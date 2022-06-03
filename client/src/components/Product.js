@@ -13,10 +13,8 @@ function Product({ title, image, price, rating }) {
         </p>
         <div className="product__rating">
           {Array(rating)
-            .fill()
-            .map((elem, i) => (
-              <p>⭐️</p>
-            ))}
+            .fill(<p>⭐️</p>)
+          }
         </div>
       </div>
       <img src={book} alt="book" />

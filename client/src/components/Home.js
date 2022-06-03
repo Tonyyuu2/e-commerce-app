@@ -14,7 +14,7 @@ function Home() {
             title="The lean startup"
             price={29.99}
             image={book}
-            rating={5}
+            rating={2}
           />
           <Product />
         </div>
