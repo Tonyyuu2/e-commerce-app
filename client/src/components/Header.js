@@ -3,11 +3,19 @@ import "./Header.css";
 import siteicon from "../icons/siteicon.png";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
-      <img src={siteicon} className="header__logo" alt="icon" />
+      <NavLink
+        exact="true"
+        activeclassname="active"
+        className="home-link"
+        to="/"
+      >
+        <img src={siteicon} className="header__logo" alt="icon" />
+      </NavLink>
       <div className="header__search">
         <input type="text" className="header__searchInput" />
         <SearchIcon className="header__searchIcon" />
@@ -25,10 +33,12 @@ function Header() {
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
         </div>
+        <NavLink exact="true" activeclassname='active' to='/checkout'>
         <div className="header__optionBasket">
           <ShoppingBasketIcon />
           <span className="header__optionLineTwo header__basketCount">0</span>
         </div>
+        </NavLink>
       </div>
     </div>
   );
