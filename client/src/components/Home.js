@@ -11,20 +11,44 @@ function Home() {
         <img src={backdrop} className="home__image" alt="backdrop" />
         <div className="home__row">
           <Product
+            id="3992342"
             title="The lean startup"
             price={29.99}
             image={book}
-            rating={2}
+            rating={5}
           />
-          <Product />
+          <Product
+            id="3992342"
+            title="The lean startup"
+            price={29.99}
+            image={book}
+            rating={5}
+          />
         </div>
         <div className="home__row">
-          <Product />
-          <Product />
-          <Product />
+          <Product
+            id="39923422"
+            title="Samsung LC4938589 49' Curved LED Gaming Monitor"
+            price={129.99}
+            image={book}
+            rating={3}
+          />
+          <Product
+            id="3992342"
+            title="The lean startup"
+            price={29.99}
+            image={book}
+            rating={5}
+          />
         </div>
         <div className="home__row">
-          <Product />
+          <Product
+            id="3992342"
+            title="The lean startup"
+            price={29.99}
+            image={book}
+            rating={5}
+          />
         </div>
       </div>
     </div>
